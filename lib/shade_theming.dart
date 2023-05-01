@@ -18,3 +18,4 @@ library main;
 
 export 'main.dart';
 export 'theming.dart';
+export 'consts.dart';
