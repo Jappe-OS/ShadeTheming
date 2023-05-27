@@ -14,7 +14,7 @@
 //  You should have received a copy of the GNU Affero General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 /// Properties for a theme.
 class ThemeProperties {
@@ -39,6 +39,19 @@ class DarkThemeProperties {
   const DarkThemeProperties(this.themeProperties);
 
   final ThemeProperties themeProperties;
+
+  static ThemeProperties getDefault() {
+    return ThemeProperties(
+      const Color.fromARGB(255, 30, 30, 30),
+      const Color.fromARGB(255, 37, 37, 38),
+      const Color.fromARGB(80, 243, 243, 243),
+      Colors.blue,
+      const Color(0xFFFFFFFF).withOpacity(0.9),
+      const Color(0xFFFFFFFF),
+      const Color(0xFFFFFFFF).withOpacity(0.6),
+      const Color(0xFF000000).withOpacity(0.9)
+    );
+  }
 }
 
 /// Properties for the light theme.
@@ -46,4 +59,17 @@ class LightThemeProperties {
   const LightThemeProperties(this.themeProperties);
 
   final ThemeProperties themeProperties;
+
+  static ThemeProperties getDefault() {
+    return ThemeProperties(
+      const Color.fromARGB(255, 255, 255, 255),
+      const Color.fromARGB(255, 243, 243, 243),
+      const Color.fromARGB(80, 37, 37, 38),
+      Colors.blue,
+      const Color(0xFF000000).withOpacity(0.9),
+      const Color(0xFF000000),
+      const Color(0xFF000000).withOpacity(0.6),
+      const Color(0xFFFFFFFF).withOpacity(0.9)
+    );
+  }
 }
