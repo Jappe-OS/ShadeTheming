@@ -40,8 +40,9 @@ class DarkThemeProperties {
 
   final ThemeProperties themeProperties;
 
-  static ThemeProperties getDefault() {
-    return ThemeProperties(
+  /// Get default theme properties for the dark theme.
+  static DarkThemeProperties getDefault() {
+    return DarkThemeProperties(ThemeProperties(
       const Color.fromARGB(255, 30, 30, 30),
       const Color.fromARGB(255, 37, 37, 38),
       const Color.fromARGB(80, 243, 243, 243),
@@ -50,7 +51,7 @@ class DarkThemeProperties {
       const Color(0xFFFFFFFF),
       const Color(0xFFFFFFFF).withOpacity(0.6),
       const Color(0xFF000000).withOpacity(0.9)
-    );
+    ));
   }
 }
 
@@ -60,8 +61,9 @@ class LightThemeProperties {
 
   final ThemeProperties themeProperties;
 
-  static ThemeProperties getDefault() {
-    return ThemeProperties(
+  /// Get default theme properties for the light theme.
+  static LightThemeProperties getDefault() {
+    return LightThemeProperties(ThemeProperties(
       const Color.fromARGB(255, 255, 255, 255),
       const Color.fromARGB(255, 243, 243, 243),
       const Color.fromARGB(80, 37, 37, 38),
@@ -70,6 +72,6 @@ class LightThemeProperties {
       const Color(0xFF000000),
       const Color(0xFF000000).withOpacity(0.6),
       const Color(0xFFFFFFFF).withOpacity(0.9)
-    );
+    ));
   }
 }
