@@ -53,7 +53,7 @@ class ShadeThemeProvider with ChangeNotifier {
 class _ShadeTheming {
   static Color fallbackColor = const Color.fromARGB(255, 217, 0, 255);
   static ThemeProperties defaultThemeProperties =
-      ThemeProperties(fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor);
+      ThemeProperties(fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor, fallbackColor);
 
   static void init() {
     ShadeTheme.setThemeProperties(DarkThemeProperties(defaultThemeProperties), LightThemeProperties(defaultThemeProperties));
