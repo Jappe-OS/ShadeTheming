@@ -46,7 +46,7 @@ class DarkThemeProperties {
     return DarkThemeProperties(ThemeProperties(
         const Color.fromARGB(255, 30, 30, 30),
         const Color.fromARGB(255, 37, 37, 38),
-        const Color.fromARGB(145, 87, 87, 88),
+        const Color.fromARGB(155, 87 - 20, 87 - 20, 88 - 20),
         const Color.fromARGB(80, 243, 243, 243),
         Colors.blueAccent,
         const Color(0xFFFFFFFF).withOpacity(0.9),
@@ -67,7 +67,7 @@ class LightThemeProperties {
     return LightThemeProperties(ThemeProperties(
         const Color.fromARGB(255, 255, 255, 255),
         const Color.fromARGB(255, 243, 243, 243),
-        const Color.fromARGB(145, 243 - 50, 243 - 50, 243 - 50),
+        const Color.fromARGB(155, 243 - 50 + 20, 243 - 50 + 20, 243 - 50 + 20),
         const Color.fromARGB(80, 37, 37, 38),
         Colors.blueAccent,
         const Color(0xFF000000).withOpacity(0.9),
