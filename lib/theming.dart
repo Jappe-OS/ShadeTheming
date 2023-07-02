@@ -17,6 +17,7 @@
 import 'package:flutter/material.dart';
 
 /// Properties for a theme.
+@Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
 class ThemeProperties {
   const ThemeProperties(this.backgroundColor1, this.backgroundColor2, this.transparentFillColor, this.borderColor, this.accentColor,
       this.normalTextColor, this.darkerTextColor, this.secondaryTextColor, this.invertedTextColor);
@@ -36,6 +37,7 @@ class ThemeProperties {
 }
 
 /// Properties for the dark theme.
+@Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
 class DarkThemeProperties {
   const DarkThemeProperties(this.themeProperties);
 
@@ -57,6 +59,7 @@ class DarkThemeProperties {
 }
 
 /// Properties for the light theme.
+@Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
 class LightThemeProperties {
   const LightThemeProperties(this.themeProperties);
 

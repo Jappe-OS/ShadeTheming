@@ -32,6 +32,7 @@ Future main() async {
 ///
 /// When you can access the provider, you can use all the theme
 /// properties and update them in your app automatically.
+@Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
 class ShadeThemeProvider with ChangeNotifier {
   void setTheme(int theme) {
     if (theme == 0 || theme == 1) {
@@ -61,6 +62,7 @@ class _ShadeTheming {
 }
 
 /// Get/Set the current theme settings. Currently supports light and dark theme only.
+@Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
 class ShadeTheme {
   static DarkThemeProperties? _darkThemeProperties;
   static LightThemeProperties? _lightThemeProperties;
@@ -69,6 +71,7 @@ class ShadeTheme {
 
   // PUBLIC
   /// This method is already done after using the [ShadeUI.init] method.
+  @Deprecated("ShadeTheming is deprecated, use ShadeUI 2.x instead.")
   static void setThemeProperties(DarkThemeProperties dtp, LightThemeProperties ltp) {
     _darkThemeProperties = dtp;
     _lightThemeProperties = ltp;
