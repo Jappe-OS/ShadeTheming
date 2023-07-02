@@ -1,5 +1,6 @@
 # [deprecated] ShadeTheming
->> deprecated >> Use ShadeUI 2.x instead.
+<> deprecated <> Use ShadeUI 2.x instead.
+---
 A simple theming system for Shade UI.
 
 ## Info
